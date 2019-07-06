@@ -1,0 +1,588 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Обработка,  демонстрирующая работу с сервисами WEBSMS</v8:content>
+		</v8:item>
+	</Title>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="58">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="59"/>
+			<ChildItems>
+				<InputField name="ПолеЛогин" id="49">
+					<DataPath>Login</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Логин</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Left</TitleLocation>
+					<HorizontalAlign>Left</HorizontalAlign>
+					<Width>30</Width>
+					<Height>1</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<ContextMenu name="ПолеЛогинКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ПолеЛогинРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="ПолеПароль" id="52">
+					<DataPath>Password</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пароль</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Left</TitleLocation>
+					<HorizontalAlign>Left</HorizontalAlign>
+					<Width>30</Width>
+					<Height>1</Height>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<ContextMenu name="ПолеПарольКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ПолеПарольРасширеннаяПодсказка" id="54"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="62">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="63"/>
+			<ChildItems>
+				<Table name="ТаблицаИменаОтправителей" id="20">
+					<Representation>List</Representation>
+					<Width>23</Width>
+					<SelectionMode>SingleRow</SelectionMode>
+					<RowSelectionMode>Row</RowSelectionMode>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<DataPath>СписокИмен</DataPath>
+					<RowPictureDataPath>СписокИмен.Picture</RowPictureDataPath>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<ContextMenu name="ТаблицаИменаОтправителейКонтекстноеМеню" id="21"/>
+					<AutoCommandBar name="ТаблицаИменаОтправителейКоманднаяПанель" id="22">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ТаблицаИменаОтправителейРасширеннаяПодсказка" id="23"/>
+					<SearchStringAddition name="ТаблицаИменаОтправителейСтрокаПоиска" id="78">
+						<AdditionSource>
+							<Item>ТаблицаИменаОтправителей</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаИменаОтправителейСтрокаПоискаКонтекстноеМеню" id="79"/>
+						<ExtendedTooltip name="ТаблицаИменаОтправителейСтрокаПоискаРасширеннаяПодсказка" id="80"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ТаблицаИменаОтправителейСостояниеПросмотра" id="81">
+						<AdditionSource>
+							<Item>ТаблицаИменаОтправителей</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаИменаОтправителейСостояниеПросмотраКонтекстноеМеню" id="82"/>
+						<ExtendedTooltip name="ТаблицаИменаОтправителейСостояниеПросмотраРасширеннаяПодсказка" id="83"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ТаблицаИменаОтправителейУправлениеПоиском" id="84">
+						<AdditionSource>
+							<Item>ТаблицаИменаОтправителей</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаИменаОтправителейУправлениеПоискомКонтекстноеМеню" id="85"/>
+						<ExtendedTooltip name="ТаблицаИменаОтправителейУправлениеПоискомРасширеннаяПодсказка" id="86"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="КолонкаИменаОтправителей" id="24">
+							<DataPath>СписокИмен.Value</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имена отправителей</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КолонкаИменаОтправителейКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="КолонкаИменаОтправителейРасширеннаяПодсказка" id="26"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Button name="Кнопка1" id="15">
+					<Type>UsualButton</Type>
+					<Height>1</Height>
+					<CommandName>Form.Command.КомандаВызватьФункциюПолученияСпискаИменОтпр</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить  список имен отправителей</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Кнопка1РасширеннаяПодсказка" id="16"/>
+				</Button>
+				<LabelDecoration name="Декорация1" id="72">
+					<Width>44</Width>
+					<Height>2</Height>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="74"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="60">
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="61"/>
+			<ChildItems>
+				<Table name="Таблица_СМС" id="27">
+					<Representation>List</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<Width>350</Width>
+					<Height>300</Height>
+					<HeightInTableRows>6</HeightInTableRows>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ТЗ_СМС</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Введите несколько строк в таблицу для тестирования отправки СМС-сообщений</v8:content>
+						</v8:item>
+					</Title>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="Таблица_СМСКонтекстноеМеню" id="28"/>
+					<AutoCommandBar name="Таблица_СМСКоманднаяПанель" id="29"/>
+					<ExtendedTooltip name="Таблица_СМСРасширеннаяПодсказка" id="30"/>
+					<SearchStringAddition name="Таблица_СМССтрокаПоиска" id="87">
+						<AdditionSource>
+							<Item>Таблица_СМС</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="Таблица_СМССтрокаПоискаКонтекстноеМеню" id="88"/>
+						<ExtendedTooltip name="Таблица_СМССтрокаПоискаРасширеннаяПодсказка" id="89"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="Таблица_СМССостояниеПросмотра" id="90">
+						<AdditionSource>
+							<Item>Таблица_СМС</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="Таблица_СМССостояниеПросмотраКонтекстноеМеню" id="91"/>
+						<ExtendedTooltip name="Таблица_СМССостояниеПросмотраРасширеннаяПодсказка" id="92"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="Таблица_СМСУправлениеПоиском" id="93">
+						<AdditionSource>
+							<Item>Таблица_СМС</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="Таблица_СМСУправлениеПоискомКонтекстноеМеню" id="94"/>
+						<ExtendedTooltip name="Таблица_СМСУправлениеПоискомРасширеннаяПодсказка" id="95"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="Таблица_СМСДатаРассылки" id="31">
+							<DataPath>ТЗ_СМС.ДатаРассылки</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="Таблица_СМСДатаРассылкиКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="Таблица_СМСДатаРассылкиРасширеннаяПодсказка" id="33"/>
+						</InputField>
+						<InputField name="Таблица_СМСПолучатель" id="34">
+							<DataPath>ТЗ_СМС.Получатель</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="Таблица_СМСПолучательКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="Таблица_СМСПолучательРасширеннаяПодсказка" id="36"/>
+						</InputField>
+						<InputField name="Таблица_СМССостояние" id="37">
+							<DataPath>ТЗ_СМС.Состояние</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="Таблица_СМССостояниеКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="Таблица_СМССостояниеРасширеннаяПодсказка" id="39"/>
+						</InputField>
+						<InputField name="Таблица_СМСДатаДоставки" id="40">
+							<DataPath>ТЗ_СМС.ДатаДоставки</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="Таблица_СМСДатаДоставкиКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="Таблица_СМСДатаДоставкиРасширеннаяПодсказка" id="42"/>
+						</InputField>
+						<InputField name="Таблица_СМСТекстСообщения" id="43">
+							<DataPath>ТЗ_СМС.ТекстСообщения</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="Таблица_СМСТекстСообщенияКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="Таблица_СМСТекстСообщенияРасширеннаяПодсказка" id="45"/>
+						</InputField>
+						<InputField name="Таблица_СМСIDСообщения" id="46">
+							<DataPath>ТЗ_СМС.IDСообщения</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="Таблица_СМСIDСообщенияКонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="Таблица_СМСIDСообщенияРасширеннаяПодсказка" id="48"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="Группа5" id="70">
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<Group>Horizontal</Group>
+					<ChildItemsWidth>Equal</ChildItemsWidth>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="71"/>
+					<ChildItems>
+						<Button name="КнопкаОтправитьСМС" id="1">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.КомандаВызватьФункциюОтправкиСМС</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отправить СМС</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КнопкаОтправитьСМСРасширеннаяПодсказка" id="2"/>
+						</Button>
+						<Button name="КнопкаПолучитьСтатус" id="68">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.КомандаВызватьФункциюСостояние</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Узнать состояние ранее отправленных СМС</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="КнопкаПолучитьСтатусРасширеннаяПодсказка" id="69"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа4" id="64">
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Horizontal</Group>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="65"/>
+			<ChildItems>
+				<InputField name="ПолеБаланс" id="55">
+					<DataPath>Баланс</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Баланс</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПолеБалансКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ПолеБалансРасширеннаяПодсказка" id="57"/>
+				</InputField>
+				<Button name="КнопкаПолучитьБаланс" id="66">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.КомандаВызватьФункциюПолучитьБаланс</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получить баланс</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаПолучитьБалансРасширеннаяПодсказка" id="67"/>
+				</Button>
+				<Button name="ОтправитьТест" id="96">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОтправитьТест</CommandName>
+					<ExtendedTooltip name="ОтправитьТестРасширеннаяПодсказка" id="97"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Декорация2" id="75">
+			<Width>115</Width>
+			<Border width="1">
+				<v8ui:style xsi:type="v8ui:ControlBorderType">Overline</v8ui:style>
+			</Border>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="76"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="77"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ВебСМС</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Телефон" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Телефон</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстСообщения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокИмен" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список имен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТЗ_СМС" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Т з СМС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ТЗ_СМС.Состояние</Field>
+				<Field>ТЗ_СМС.ДатаРассылки</Field>
+				<Field>ТЗ_СМС.ДатаДоставки</Field>
+				<Field>ТЗ_СМС.IDСообщения</Field>
+			</UseAlways>
+			<Columns>
+				<Column name="ДатаРассылки" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата рассылки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Получатель" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получатель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Состояние" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаДоставки" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата доставки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТекстСообщения" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст сообщения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="IDСообщения" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>IDСообщения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>14</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Login" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Password" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Баланс" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Баланс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаВызватьФункциюОтправкиСМС" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда вызвать функцию отправки СМС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда вызвать функцию отправки СМС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВызватьФункциюОтправкиСМС</Action>
+		</Command>
+		<Command name="КомандаВызватьФункциюПолученияСпискаИменОтпр" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда вызвать функцию получения списка имен отпр</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда вызвать функцию получения списка имен отпр</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВызватьФункциюПолученияСпискаИменОтпр</Action>
+		</Command>
+		<Command name="КомандаВызватьФункциюПолучитьБаланс" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда вызвать функцию получить баланс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда вызвать функцию получить баланс</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаВызватьФункциюПолучитьБаланс</Action>
+		</Command>
+		<Command name="КомандаВызватьФункциюСостояние" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда вызвать функцию состояние</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда вызвать функцию состояние</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаВызватьФункциюСостояние</Action>
+		</Command>
+		<Command name="ОтправитьТест" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить тест</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить тест</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьТест</Action>
+		</Command>
+	</Commands>
+</Form>

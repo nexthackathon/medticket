@@ -37,12 +37,12 @@
 		<Metadata name="CommonModule.МодульРегламентныхЗаданий.Module" id="303f567e-8b3e-4db7-9f2c-5a9d67079318.0" configVersion="a9db419281a34647aa9c6e4b1fd4b79800000000"/>
 		<Metadata name="CommonModule.ОбменДаннымиПовтИсп" id="6d9405dd-23db-44a1-8b22-047d3f33943c" configVersion="a406b3452928154696accd521213ee2d00000000"/>
 		<Metadata name="CommonModule.ОбменДаннымиПовтИсп.Module" id="6d9405dd-23db-44a1-8b22-047d3f33943c.0" configVersion="3540a4ebef55f74c95f1f7e1fa50b83b00000000"/>
-		<Metadata name="CommonModule.ОперацииWS" id="094a1efd-1a2e-45ce-a95a-56f6266d4829" configVersion="8cd5f559ca65b747bd8d28fec854ddc000000000"/>
-		<Metadata name="CommonModule.ОперацииWS.Module" id="094a1efd-1a2e-45ce-a95a-56f6266d4829.0" configVersion="d95045576ae620499f55cf7068a6872300000000"/>
-		<Metadata name="CommonModule.РаботаСЗаписьюНаПрием" id="7bb024e0-45dd-4baa-bf2f-0fe1fb952313" configVersion="27c4c1fcbc27f342a1ecee9eb3c031b700000000"/>
-		<Metadata name="CommonModule.РаботаСЗаписьюНаПрием.Module" id="7bb024e0-45dd-4baa-bf2f-0fe1fb952313.0" configVersion="5889249121727c4ea4dd558e0391a1d300000000"/>
-		<Metadata name="CommonModule.РаботаСРасписанием" id="ea8ab041-c83e-4c85-ba67-5f2dd846eea4" configVersion="3e0f5faedf5a6b45ab47d64820db222500000000"/>
-		<Metadata name="CommonModule.РаботаСРасписанием.Module" id="ea8ab041-c83e-4c85-ba67-5f2dd846eea4.0" configVersion="59d99b7358657f44bdf3a2d1fa89108d00000000"/>
+		<Metadata name="CommonModule.ОперацииWS" id="094a1efd-1a2e-45ce-a95a-56f6266d4829" configVersion="d04b6a52a10af94496eff9f228be30ef00000000"/>
+		<Metadata name="CommonModule.ОперацииWS.Module" id="094a1efd-1a2e-45ce-a95a-56f6266d4829.0" configVersion="d680223aac56da43b5da287c8b2490fc00000000"/>
+		<Metadata name="CommonModule.РаботаСЗаписьюНаПрием" id="7bb024e0-45dd-4baa-bf2f-0fe1fb952313" configVersion="e4b5e4beba80c540b3b7cc6843fec51800000000"/>
+		<Metadata name="CommonModule.РаботаСЗаписьюНаПрием.Module" id="7bb024e0-45dd-4baa-bf2f-0fe1fb952313.0" configVersion="b49e5a3984c8334582bcdf0ccd4e5ff600000000"/>
+		<Metadata name="CommonModule.РаботаСРасписанием" id="ea8ab041-c83e-4c85-ba67-5f2dd846eea4" configVersion="77779690823a9b4da485af11cdd8891300000000"/>
+		<Metadata name="CommonModule.РаботаСРасписанием.Module" id="ea8ab041-c83e-4c85-ba67-5f2dd846eea4.0" configVersion="4a909d1dd4517346b805b31496d2fd5000000000"/>
 		<Metadata name="CommonModule.ЭлектроннаяПочтаКлиентСервер" id="dec79276-2b02-4aa8-92c6-87a42b0fe5cf" configVersion="4a0678ca31e6384b85f78596cdb1a04900000000"/>
 		<Metadata name="CommonModule.ЭлектроннаяПочтаКлиентСервер.Module" id="dec79276-2b02-4aa8-92c6-87a42b0fe5cf.0" configVersion="cfaa9c753c7b3a49bd31974b85cd572200000000"/>
 		<Metadata name="Configuration.Хакатон_Сервер" id="4da19a7e-05f6-4258-b4e6-29bd0876f0c8" configVersion="7032bb8b804c9444afbb8b9dca75efaf00000000"/>

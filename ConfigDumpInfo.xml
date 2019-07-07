@@ -22,7 +22,7 @@
 			<Metadata name="Catalog.Лекарства.Attribute.МеждународноеНепатентованноеНазвание" id="d545df3a-fb2f-4599-a623-5fdb2f63a345"/>
 		</Metadata>
 		<Metadata name="Catalog.МеждународныеНепатентованыеНаименования" id="c8d0a6c0-a4aa-4b9c-b0aa-0e5cd4836cec" configVersion="ff516c492166f54782de448946c5520e00000000"/>
-		<Metadata name="Catalog.Пациенты" id="8683dfae-9d6c-417e-ba1e-4c2ee8b37dd9" configVersion="2c6686fec293b14f8c941d62fa17f72000000000">
+		<Metadata name="Catalog.Пациенты" id="8683dfae-9d6c-417e-ba1e-4c2ee8b37dd9" configVersion="d8cddfe867d0244c9ad46bf626d158e800000000">
 			<Metadata name="Catalog.Пациенты.Attribute.ОповещатьЭлектроннымПисьмом" id="0120a975-d2ef-4b84-b161-e736499e9605"/>
 			<Metadata name="Catalog.Пациенты.Attribute.СНИЛС" id="0b5509f4-7a77-4c04-99bb-45a330e7d560"/>
 			<Metadata name="Catalog.Пациенты.Attribute.ОповещатьСМС" id="42acd694-ee60-4123-a296-638450e632b2"/>
@@ -39,20 +39,21 @@
 		<Metadata name="CommonModule.ОбменДаннымиПовтИсп.Module" id="6d9405dd-23db-44a1-8b22-047d3f33943c.0" configVersion="3540a4ebef55f74c95f1f7e1fa50b83b00000000"/>
 		<Metadata name="CommonModule.ОперацииWS" id="094a1efd-1a2e-45ce-a95a-56f6266d4829" configVersion="8cd5f559ca65b747bd8d28fec854ddc000000000"/>
 		<Metadata name="CommonModule.ОперацииWS.Module" id="094a1efd-1a2e-45ce-a95a-56f6266d4829.0" configVersion="d95045576ae620499f55cf7068a6872300000000"/>
-		<Metadata name="CommonModule.РаботаСЗаписьюНаПрием" id="7bb024e0-45dd-4baa-bf2f-0fe1fb952313" configVersion="96ef2d1e2c577545a8a27fcc9d444c8b00000000"/>
-		<Metadata name="CommonModule.РаботаСЗаписьюНаПрием.Module" id="7bb024e0-45dd-4baa-bf2f-0fe1fb952313.0" configVersion="076b1f430c0fa04bababa2087d01378200000000"/>
-		<Metadata name="CommonModule.РаботаСРасписанием" id="ea8ab041-c83e-4c85-ba67-5f2dd846eea4" configVersion="30d5d1ac36e89b4f9fc2fcbbdd8401a700000000"/>
-		<Metadata name="CommonModule.РаботаСРасписанием.Module" id="ea8ab041-c83e-4c85-ba67-5f2dd846eea4.0" configVersion="163d2f26e680014d9cb06810c21c146c00000000"/>
+		<Metadata name="CommonModule.РаботаСЗаписьюНаПрием" id="7bb024e0-45dd-4baa-bf2f-0fe1fb952313" configVersion="27c4c1fcbc27f342a1ecee9eb3c031b700000000"/>
+		<Metadata name="CommonModule.РаботаСЗаписьюНаПрием.Module" id="7bb024e0-45dd-4baa-bf2f-0fe1fb952313.0" configVersion="5889249121727c4ea4dd558e0391a1d300000000"/>
+		<Metadata name="CommonModule.РаботаСРасписанием" id="ea8ab041-c83e-4c85-ba67-5f2dd846eea4" configVersion="3e0f5faedf5a6b45ab47d64820db222500000000"/>
+		<Metadata name="CommonModule.РаботаСРасписанием.Module" id="ea8ab041-c83e-4c85-ba67-5f2dd846eea4.0" configVersion="59d99b7358657f44bdf3a2d1fa89108d00000000"/>
 		<Metadata name="CommonModule.ЭлектроннаяПочтаКлиентСервер" id="dec79276-2b02-4aa8-92c6-87a42b0fe5cf" configVersion="4a0678ca31e6384b85f78596cdb1a04900000000"/>
 		<Metadata name="CommonModule.ЭлектроннаяПочтаКлиентСервер.Module" id="dec79276-2b02-4aa8-92c6-87a42b0fe5cf.0" configVersion="cfaa9c753c7b3a49bd31974b85cd572200000000"/>
 		<Metadata name="Configuration.Хакатон_Сервер" id="4da19a7e-05f6-4258-b4e6-29bd0876f0c8" configVersion="7032bb8b804c9444afbb8b9dca75efaf00000000"/>
 		<Metadata name="Configuration.Хакатон_Сервер.HomePageWorkArea" id="8551cc98-fd76-40f0-b84f-1d0b274f621d.8" configVersion="d7780b4eb969f841a0ffe9ec718cd09800000000"/>
 		<Metadata name="Configuration.Хакатон_Сервер.ManagedApplicationModule" id="8551cc98-fd76-40f0-b84f-1d0b274f621d.6" configVersion="848e982c0d043445ab5ca71a7907bb5300000000"/>
-		<Metadata name="DataProcessor.АРМ" id="28f3d0dd-2d84-4bca-b87f-30e84e85ab6f" configVersion="010c89c382de9f4fa95c88ea0d109e7000000000">
+		<Metadata name="DataProcessor.АРМ" id="28f3d0dd-2d84-4bca-b87f-30e84e85ab6f" configVersion="b211732d5cc7eb4da1cb063a0cf361ac00000000">
 			<Metadata name="DataProcessor.АРМ.Attribute.Пациент" id="d3db273b-8fe9-46bf-a2e8-1dfb53ed5c93"/>
+			<Metadata name="DataProcessor.АРМ.Attribute.Поликлиника" id="e4b1314c-6d12-4063-969a-7c84ec610ab9"/>
 		</Metadata>
-		<Metadata name="DataProcessor.АРМ.Form.ФормаАвторизации" id="4deb8d40-1e67-47c1-9417-2abce8cec453" configVersion="38c75a759321bf408aa3935565af564f00000000"/>
-		<Metadata name="DataProcessor.АРМ.Form.ФормаАвторизации.Form" id="4deb8d40-1e67-47c1-9417-2abce8cec453.0" configVersion="b732fbd959aacd45800e0582d62c7fd200000000"/>
+		<Metadata name="DataProcessor.АРМ.Form.ФормаАвторизации" id="4deb8d40-1e67-47c1-9417-2abce8cec453" configVersion="57aac7df26a6074f8a8a59cca8f1a82600000000"/>
+		<Metadata name="DataProcessor.АРМ.Form.ФормаАвторизации.Form" id="4deb8d40-1e67-47c1-9417-2abce8cec453.0" configVersion="0d17ef576283b447a0d430f76ff8d4dc00000000"/>
 		<Metadata name="DataProcessor.ВебСМС" id="27380d4f-2942-411e-ad06-e7e3a1ca98f7" configVersion="d6d8e80c785b074baffa1ed25918596b00000000"/>
 		<Metadata name="DataProcessor.ВебСМС.Form.Главная" id="b5643ac6-130f-4931-a027-a18d6370ecdf" configVersion="f7d9cb56121da045986be11eebd0d54200000000"/>
 		<Metadata name="DataProcessor.ВебСМС.Form.Главная.Form" id="b5643ac6-130f-4931-a027-a18d6370ecdf.0" configVersion="ff2de05f4ced284a9ebd945ae9d1783300000000"/>
